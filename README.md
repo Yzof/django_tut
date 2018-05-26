@@ -9,8 +9,8 @@
 ## Main Features
 
 ## Steps
-  1. Before you can add any features to a Python/Django project you must initalize several files, such as the main project and any apps you plan on using
-  2. 
+  1. Before you can add any features to a Python/Django project you must initialize several files, such as the main project and any apps you plan on using
+  2.
 
 ## Resources
 These are the basic tutorials and guides I used while constructing this project. They are included for future reference.
