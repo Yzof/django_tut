@@ -10,7 +10,7 @@
 
 ## Steps
   1. Before you can add any features to a Python/Django project you must initialize several files, such as the main project and any apps you plan on using
-  2.
+  2. After you have created the app you want to use, make sure to add it to the INSTALLED_APPS list in the settings.py file
 
 ## Resources
 These are the basic tutorials and guides I used while constructing this project. They are included for future reference.
