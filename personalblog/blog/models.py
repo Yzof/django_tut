@@ -15,7 +15,8 @@ class Post(models.Model):
     # the ManyToManyField is in the README
     category = models.ManyToManyField('blog.Category')
 
-    
+    # This will order the posts by ascending order. add a - to order desc
+    # check README for notes
     ordering = ['posted']
 
     # The following function  sets the text reference for each record.
