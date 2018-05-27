@@ -9,7 +9,9 @@ def index(request):
         'posts': Post.objects.all()[:5]
     })
 
-def view_post(request):
+def view_post(request, slug):
+    # render_to_response takes in a Template name, and a json request
+    # package
     return render_to_response('view_post.html', {
-    
+        'post': get_object_or_404(Post, slug=slug)
     })
