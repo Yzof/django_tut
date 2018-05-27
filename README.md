@@ -13,6 +13,8 @@
   2. After you have created the app you want to use, make sure to add it to the INSTALLED_APPS list in the settings.py file
   3. Then you want to create the relevant models to your app. Here you can also fill in any relationships for your models
   4. You then need to give Django Admin access to your models, for this blog, the Admin should not be able to change the date of when a Post was made, but they can change the title or body content.
+  5. Add the view requests for your models. These include the index(search for all), the standard view, which will show a single object of that class.
+  6. Define the URL's for your site, this uses RegExp's to define the wildcards in the url
 
 ## Resources
 These are the basic tutorials and guides I used while constructing this project. They are included for future reference.
