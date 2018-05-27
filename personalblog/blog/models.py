@@ -6,7 +6,8 @@ class Post(models.Model):
     # for the elements of the model
     title = models.CharField(max_length=100, unique=True)
     # A slug is the end bit of a url. ex: google.com/search,
-    # search is the slug
+    # search is the slug. Slugs are also used to search for things in a
+    # table
     slug = models.SlugField(max_length=100, unique=True)
     body = models.TextField()
     posted = models.DateField(db_index=True, auto_now_add=True)
