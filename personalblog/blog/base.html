@@ -1,0 +1,27 @@
+<!--
+The base HTMl file will operate as the main template for our website.
+You can have different "base" files, but for this app(blog), our base
+will show list's of different models.
+
+The template will specify area's where other templates can fill in.
+
+Blocks in Django follow a pattern. The opener contains curly braces({})
+with modulo(%) inside. following this the keyword block and the blocks
+name. You simply need to close the block with an endblock keyword.
+
+Further readings in the notes.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block head_title %} Welcome to my Blog {% endblock %}</title>
+  </head>
+  <body>
+    <h1>{% block title %} Welcome to my Blog{% endblock %}</h1>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

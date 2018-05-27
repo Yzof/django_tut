@@ -15,6 +15,8 @@
   4. You then need to give Django Admin access to your models, for this blog, the Admin should not be able to change the date of when a Post was made, but they can change the title or body content.
   5. Add the view requests for your models. These include the index(search for all), the standard view, which will show a single object of that class.
   6. Define the URL's for your site, this uses RegExp's to define the wildcards in the url
+  7. Once, your URL's are set up, you need the templates for the html they are pointing to. You want to use a template when an html page will vary it's
+  content based on database data.
 
 ## Resources
 These are the basic tutorials and guides I used while constructing this project. They are included for future reference.
@@ -24,3 +26,4 @@ These are the basic tutorials and guides I used while constructing this project.
   * [Django Blog Tutorial](https://www.djangorocks.com/tutorials/how-to-create-a-basic-blog-in-django/starting-your-application.html)
   * [ManyToManyField Docs](https://docs.djangoproject.com/en/2.0/topics/db/examples/many_to_many/)
   * [Ordering Docs](https://docs.djangoproject.com/en/2.0/ref/models/options/#ordering)
+  * [Template Docs](https://docs.djangoproject.com/en/1.7/topics/templates/)
