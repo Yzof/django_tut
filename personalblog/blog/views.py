@@ -1,3 +1,3 @@
 from django.shortcuts import render
-from perosnalblog.blog.models import Post, Category
+from personalblog.blog.models import Post, Category
 # Create your views here.
