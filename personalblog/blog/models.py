@@ -2,16 +2,25 @@ from django.db import models
 
 # Create your models here.
 class Post(models.Model):
-    # Defines the different characteristics of the elements
-    # of the model
+    # The following lines of code define the different characteristics
+    # for the elements of the model
     title = models.CharField(max_length=100, unique=True)
     # A slug is the end bit of a url. ex: google.com/search,
     # search is the slug
     slug = models.SlugField(max_length=100, unique=True)
     body = models.TextField()
     posted = models.DateField(db_index=True, auto_now_add=True)
-    category = models.ForeignKey('blog.Category')
 
+    # This deviates from the standard tutorial. Notes above about what
+    # the ManyToManyField is in the README
+    category = models.ManyToManyField('blog.Category')
+
+    
+    ordering = ['posted']
+
+    # The following function  sets the text reference for each record.
+    # This is used mainly in the automated django admin, but this is
+    # still available to use on your own site.
     def __unicode__(self):
         return '%s' % self.title
 
