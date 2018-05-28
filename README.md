@@ -16,6 +16,7 @@
   5. Add the view requests for your models. These include the index(search for all), the standard view, which will show a single object of that class.
   6. Define the URL's for your site, this uses RegExp's to define the wildcards in the url
   7. Once, your URL's are set up, you need the templates for the html they are pointing to. You want to use a template when an html page will vary it's content based on database data.
+  8. Finally to run your website use the command "python manage.py runserver"
 
 ## Resources
 These are the basic tutorials and guides I used while constructing this project. They are included for future reference.
