@@ -26,17 +26,17 @@ class Post(models.Model):
     def __unicode__(self):
         return '%s' % self.title
 
-    @permalink
+    @models.permalink
     def get_absolute_url(self):
         return ("view_blog_post", None, { 'slug': self.slug })
 
-class Category(models.Model)
+class Category(models.Model):
     title = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=100, db_index=True)
 
     def __unicode(self):
         return '%s' % self.title
 
-    @permalink
+    @models.permalink
     def get_absolute_url(self):
         return ("view_blog_category", None, { 'slug': self.slug })
