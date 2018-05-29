@@ -31,3 +31,4 @@ These are the basic tutorials and guides I used while constructing this project.
   * [ManyToManyField Docs](https://docs.djangoproject.com/en/2.0/topics/db/examples/many_to_many/)
   * [Ordering Docs](https://docs.djangoproject.com/en/2.0/ref/models/options/#ordering)
   * [Template Docs](https://docs.djangoproject.com/en/1.7/topics/templates/)
+  * [Materialize Docs](https://materializecss.com/getting-started.html)
