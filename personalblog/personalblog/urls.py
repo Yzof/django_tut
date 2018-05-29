@@ -23,6 +23,7 @@ from blog import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('blog/', views.index),
     url(
         r'^blog/view/(?P<slug>[^\.]+).html',
         views.view_post,
