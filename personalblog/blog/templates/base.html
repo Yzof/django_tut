@@ -20,8 +20,8 @@ Further readings in the notes.
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   </head>
   <body>
-    <nav>
-      <ul>
+    <nav class="nav-wrapper">
+      <ul class="center">
         <li>
           <a href="/">Home</a>
         </li>
@@ -32,7 +32,7 @@ Further readings in the notes.
           <!--
           We will need an app for both our resume and portfolio.
           These two links won't have a target until that get's worked on.
-          -->
+        -->
           <a href="">Resume</a>
         </li>
         <li>
@@ -44,11 +44,14 @@ Further readings in the notes.
       </ul>
     </nav>
 
-    <h1>{% block title %}<span>Welcome to my Blog</span>{% endblock %}</h1>
+    <div class="container">
+      <h1>{% block title %}<span>Welcome to my Blog</span>{% endblock %}</h1>
 
-    {% block content %}
+      {% block content %}
 
-    {% endblock %}
+      {% endblock %}
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </body>
 </html>
