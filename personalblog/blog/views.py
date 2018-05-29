@@ -2,6 +2,9 @@ from django.shortcuts import render, render_to_response, get_object_or_404
 from blog.models import Post, Category
 # Create your views here.
 
+def home(request):
+    return render_to_response('home.html')
+
 def index(request):
     # This index request only loads in 5 at a time
     return render_to_response('index.html', {
