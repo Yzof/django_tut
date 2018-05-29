@@ -5,6 +5,12 @@ from blog.models import Post, Category
 def home(request):
     return render_to_response('home.html')
 
+def resume(request):
+    return render_to_response('resume.html')
+
+def portfolio(request):
+    return render_to_response('portfolio.html')
+
 def index(request):
     # This index request only loads in 5 at a time
     return render_to_response('index.html', {
