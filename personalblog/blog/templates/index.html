@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %} Welcome to my Blog {% endblock %}
+{% block title %}<span>Welcome to my Blog</span>{% endblock %}
 
 {% block content %}
   <aside>
@@ -19,18 +19,20 @@
     {% endif %}
   </aside>
 
-  <h2>Posts</h2>
-  {% if posts %}
+  <main>
+    <h2>Posts</h2>
+    {% if posts %}
     <ul>
       {% for post in posts %}
-        <li>
-          <a href="{{ post.get_absolute_url }}">
-            {{post.title}}
-          </a>
-        </li>
+      <li>
+        <a href="{{ post.get_absolute_url }}">
+          {{post.title}}
+        </a>
+      </li>
       {% endfor %}
     </ul>
-  {% else %}
+    {% else %}
     <p>There are no posts</p>
-  {% endif %}
+    {% endif %}
+  </main>
 {% endblock %}
