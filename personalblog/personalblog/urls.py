@@ -18,9 +18,11 @@ from django.urls import path
 from django.conf.urls import url
 from blog import views
 
+# We should switch these out with paths, figure out how to match the RegExp
+# with whatever matching system path uses.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^&', views.home),
+    path('', views.home),
     url(
         r'^blog/view/(?P<slug>[^\.]+).html',
         views.view_post,
