@@ -24,6 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('blog/', views.index),
+    path('resume/', views.resume),
+    path('portfolio/', views.portfolio),
     url(
         r'^blog/view/(?P<slug>[^\.]+).html',
         views.view_post,
