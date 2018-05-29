@@ -20,13 +20,13 @@ from blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^&', 'blog.views.index'),
+    url(r'^&', views.index),
     url(
         r'^blog/view/(?P<slug>[^\.]+).html',
-        'blog.views.view_post',
+        views.view_post,
         name='view_blog_post'),
     url( # This is a RegExp that matches up a given slug with a template
         r'^blog/category/(?P<slug>[^\.]+).html',
-        'blog.views.view_category',
+        views.view_category,
         name='view_blog_category'),
 ]
