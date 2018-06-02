@@ -16,12 +16,16 @@ Further readings in the notes.
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>{% block head_title %} Welcome to my Blog {% endblock %}</title>
+    <title>{% block head_title %} Welcome! {% endblock %}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <nav class="nav-wrapper">
-      <ul class="center">
+    <nav class="nav-wrapper purple darken-1">
+      <ul class="">
         <li>
           <a href="/">Home</a>
         </li>
@@ -45,13 +49,13 @@ Further readings in the notes.
     </nav>
 
     <div class="container">
-      <h1>{% block title %}<span>Welcome to my Blog</span>{% endblock %}</h1>
+      <h1>{% block title %}<span>Welcome!</span>{% endblock %}</h1>
 
       {% block content %}
 
       {% endblock %}
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </body>
 </html>
